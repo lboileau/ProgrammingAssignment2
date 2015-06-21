@@ -1,8 +1,8 @@
-## makeCacheMatric creates a cached matrix object with 4 methods:
-## get : get the matrix vector
-## set : set the matrix vector to the given input x
+## makeCacheMatrix creates a CachedMatrix object with 4 methods:
+## set : set the matrix to the given input x
+## get : get the matrix
+## setInverse : set the inverse of the matrix
 ## getInverse : get the inverse of the matrix, first checking cache
-## setInverse : set the inverse of the matrix and cache it
 makeCacheMatrix <- function(sqrMatrix = matrix()) {
   inverse <- NULL
   set <- function(x) {
